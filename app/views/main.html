@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>George Diep, Web Developer</h1>
+  <p class="lead">
+    <!-- Don't get up front if you can't take the lead. -->
+  </p>
+  <!-- <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p> -->
+</div>
+
+<div class="row portfolio" ng-controller="portfolioCtrl">
+  <div class="social-media" ng-repeat="portfolioLink in portfolioLinks">
+    <h4><a target="_blank" href="{{portfolioLink.url}}" title=""><i
+      class="fa {{portfolioLink.icon}} {{portfolioLink.htmlClass}} fa-5x"></i></a></h4>
+  </div>
+</div>
+
+<div class="row marketing" ng-controller="socialCtrl">
+  <div class="social-media" ng-repeat="socialNetwork in socialMedias">
+    <h4><a target="_blank" href="{{socialNetwork.url}}" title=""><i
+      class="fa {{socialNetwork.icon}} {{socialNetwork.htmlClass}} fa-5x"></i></a></h4>
+  </div>
+</div>
+

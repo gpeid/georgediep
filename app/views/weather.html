@@ -1,0 +1,12 @@
+<h2>RIGHT NOW</h2>
+<h4>{{data.data.name}}</h4>
+<p>It is currently <strong><span>{{data.data.main.temp}} &#176;F</span></strong></p>
+<br>
+<h4>Weather Conditions</h4>
+<p>{{data.data.weather[0].main}}</p>
+<img src="{{iconURL}}{{data.data.weather[0].icon}}{{iconExt}}" alt="">
+<br>
+{{data.data.weather[0].description}}
+
+<br>
+<!-- <h2>{{hourly}}</h2> -->
